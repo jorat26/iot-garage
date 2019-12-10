@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT.RaspberryPi", "src\IoT.RaspberryPi\IoT.RaspberryPi.csproj", "{4ABF996F-1F44-4133-8C28-E9D148425BE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT.Garage.Backend", "src\IoT.Garage.Backend\IoT.Garage.Backend.csproj", "{5061E884-C75B-4760-95EB-C1DA23AF3179}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ABF996F-1F44-4133-8C28-E9D148425BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABF996F-1F44-4133-8C28-E9D148425BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABF996F-1F44-4133-8C28-E9D148425BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABF996F-1F44-4133-8C28-E9D148425BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5061E884-C75B-4760-95EB-C1DA23AF3179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5061E884-C75B-4760-95EB-C1DA23AF3179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5061E884-C75B-4760-95EB-C1DA23AF3179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5061E884-C75B-4760-95EB-C1DA23AF3179}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FD64F66-36CE-4D16-B21A-8486EADEC389}
+	EndGlobalSection
+EndGlobal
