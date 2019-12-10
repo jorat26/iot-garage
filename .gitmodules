@@ -1,3 +1,3 @@
-[submodule "src\\IoT.RaspberryPi"]
-	path = src\\IoT.RaspberryPi
+[submodule "src/IoT.RaspberryPi"]
+	path = src/IoT.RaspberryPi
 	url = https://github.com/jorat26/iot-raspberry-pi.git
