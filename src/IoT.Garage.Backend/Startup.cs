@@ -25,18 +25,30 @@ namespace IoT.Garage.Backend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<RaspberryPi.IGpio, RaspberryPi.Gpio>();
+            services.AddSingleton<RaspberryPi.IStreamer, RaspberryPi.CameraStreamer>();
+            services.AddSingleton<RaspberryPi.IRaspberryPi, RaspberryPi.RaspberryPi>();
+
+            // services.AddSingleton(typeof(ILogger<>), typeof(Logger<>));
+            // services.AddLogging((builder) =>
+            // {
+            //     builder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+            //     builder.AddNLog(new NLogProviderOptions { CaptureMessageTemplates = true, CaptureMessageProperties = true });
+
+            // });
+
             services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            //if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
