@@ -23,7 +23,6 @@ namespace IoT.Garage.Backend
             _raspberry.Streamer.Start(null, null, TimeSpan.FromTicks(DateTime.Now.Ticks));
             while (!stoppingToken.IsCancellationRequested)
             {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 await Task.Delay(1000, stoppingToken);
             }
 

@@ -46,6 +46,7 @@ namespace IoT.Garage.Backend
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.UseSetting("detailedErrors", "true");
                     webBuilder.CaptureStartupErrors(true);
                     webBuilder.UseStartup<Startup>();
                 })
